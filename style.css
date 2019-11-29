@@ -1,14 +1,20 @@
-.container {
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.menu{
+    width: 20%;
+}
+.cats-container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     margin: auto;
 }
-.cat-container {
+.cat {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-width: 100%;
     margin: 0 8px;
 }
 .cat-name, p {
