@@ -5,54 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cat Clicker</title>
-    <style>
-        .container {
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
-            margin: auto;
-        }
-        .cat-container {
-            display: flex;
-            justify-content: center;
-        }
-        .cat {
-            margin: 0 8px;
-        }
-       .cat-name {
-           text-align: center;
-       }
-       .cat-img {
-           width: 100%;
-       }
-    </style>
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Cat Clicker</h1>
-        <h3>Click on the cat and watch the counter increases</h3>
-        <p><span id="click-counter">0</span> clicks</p>
-        <div class="cats-container">
-            <div class="cat">
-                <h4 class="cat-name" id="cat-1">Usual cat</h4>
-                <img class='cat-img' id="cat-1" src="./cat-1.jpg" />
-            </div>
-            <div class="cat">
-                <h4 class="cat-name" id="cat-2">Blue eye</h4>
-                <img class="cat-img" id="cat-2" src="./cat-2.jpg" />
-            </div>
-        </div>
+        <h3>Click on the cat and watch the counter increases</h3>    
     </div>
-    <script>
-        let count  = 0
-        const counter = $('#click-counter')[0]
-        const cats = $('.cat-img').click( () => {
-            counter.textContent = ++count
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

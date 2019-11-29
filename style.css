@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: auto;
+}
+.cat-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 100%;
+    margin: 0 8px;
+}
+.cat-name, p {
+   text-align: center;
+}
+.cat-img {
+   width: 100%;
+}
